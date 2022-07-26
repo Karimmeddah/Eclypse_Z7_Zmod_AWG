@@ -1,0 +1,378 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Jul 26 18:12:17 2022
+# Process ID: 21752
+# Current directory: C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.runs/synth_1/design_1_wrapper.vds
+# Journal file: C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.runs/synth_1\vivado.jou
+# Running On: Karim-PC, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34220 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19540
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1445.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:41]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/synth/design_1.vhd:14' bound to instance 'design_1_i' of component 'design_1' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'design_1' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/synth/design_1.vhd:45]
+INFO: [Synth 8-3491] module 'design_1_ZmodAWGController_0_0' declared at 'C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.runs/synth_1/.Xil/Vivado-21752-Karim-PC/realtime/design_1_ZmodAWGController_0_0_stub.vhdl:5' bound to instance 'ZmodAWGController_0' of component 'design_1_ZmodAWGController_0_0' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/synth/design_1.vhd:202]
+INFO: [Synth 8-638] synthesizing module 'design_1_ZmodAWGController_0_0' [C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.runs/synth_1/.Xil/Vivado-21752-Karim-PC/realtime/design_1_ZmodAWGController_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_ZmodAWGController_0_1' declared at 'C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.runs/synth_1/.Xil/Vivado-21752-Karim-PC/realtime/design_1_ZmodAWGController_0_1_stub.vhdl:5' bound to instance 'ZmodAWGController_1' of component 'design_1_ZmodAWGController_0_1' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/synth/design_1.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'design_1_ZmodAWGController_0_1' [C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.runs/synth_1/.Xil/Vivado-21752-Karim-PC/realtime/design_1_ZmodAWGController_0_1_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_c_counter_binary_0_0' declared at 'C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.runs/synth_1/.Xil/Vivado-21752-Karim-PC/realtime/design_1_c_counter_binary_0_0_stub.vhdl:5' bound to instance 'c_counter_binary_0' of component 'design_1_c_counter_binary_0_0' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/synth/design_1.vhd:250]
+INFO: [Synth 8-638] synthesizing module 'design_1_c_counter_binary_0_0' [C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.runs/synth_1/.Xil/Vivado-21752-Karim-PC/realtime/design_1_c_counter_binary_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.runs/synth_1/.Xil/Vivado-21752-Karim-PC/realtime/design_1_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/synth/design_1.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.runs/synth_1/.Xil/Vivado-21752-Karim-PC/realtime/design_1_clk_wiz_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/synth/design_1.vhd:262]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (1#1) [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (2#1) [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at 'c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/synth/design_1.vhd:270]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (3#1) [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (4#1) [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_1_0' declared at 'c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_0' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/synth/design_1.vhd:274]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (4#1) [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_0' (5#1) [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (6#1) [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/synth/design_1.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (7#1) [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:41]
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1445.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1445.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1445.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1445.844 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_1_in_context.xdc] for cell 'design_1_i/ZmodAWGController_0'
+Finished Parsing XDC File [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_1_in_context.xdc] for cell 'design_1_i/ZmodAWGController_0'
+Parsing XDC File [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1_in_context.xdc] for cell 'design_1_i/ZmodAWGController_1'
+Finished Parsing XDC File [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1_in_context.xdc] for cell 'design_1_i/ZmodAWGController_1'
+Parsing XDC File [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0_in_context.xdc] for cell 'design_1_i/c_counter_binary_0'
+Finished Parsing XDC File [c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0_in_context.xdc] for cell 'design_1_i/c_counter_binary_0'
+Parsing XDC File [C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.srcs/constrs_1/new/EclypseZ7.xdc]
+Finished Parsing XDC File [C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.srcs/constrs_1/new/EclypseZ7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.srcs/constrs_1/new/EclypseZ7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1456.246 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1456.246 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1456.246 ; gain = 10.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1456.246 ; gain = 10.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ZmodDAC_ClkIO_0. (constraint file  c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_1_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ZmodDAC_ClkIO_0. (constraint file  c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_1_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for ZmodDAC_ClkIn_0. (constraint file  c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_1_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ZmodDAC_ClkIn_0. (constraint file  c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_1_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for sZmodDAC_SDIO_0. (constraint file  c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_1_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sZmodDAC_SDIO_0. (constraint file  c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_0/design_1_ZmodAWGController_0_1_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ZmodDAC_ClkIO_1. (constraint file  c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ZmodDAC_ClkIO_1. (constraint file  c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for ZmodDAC_ClkIn_1. (constraint file  c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ZmodDAC_ClkIn_1. (constraint file  c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for sZmodDAC_SDIO_1. (constraint file  c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sZmodDAC_SDIO_1. (constraint file  c:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1/ip/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1/design_1_ZmodAWGController_0_1_in_context.xdc, line 10).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ZmodAWGController_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ZmodAWGController_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/c_counter_binary_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1456.246 ; gain = 10.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1456.246 ; gain = 10.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1456.246 ; gain = 10.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1456.246 ; gain = 10.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1456.246 ; gain = 10.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1472.625 ; gain = 26.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1479.391 ; gain = 33.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1479.391 ; gain = 33.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1479.391 ; gain = 33.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1479.391 ; gain = 33.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1479.391 ; gain = 33.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1479.391 ; gain = 33.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |design_1_ZmodAWGController_0_0 |         1|
+|2     |design_1_ZmodAWGController_0_1 |         1|
+|3     |design_1_c_counter_binary_0_0  |         1|
+|4     |design_1_clk_wiz_0_0           |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------------+------+
+|      |Cell                                |Count |
++------+------------------------------------+------+
+|1     |design_1_ZmodAWGController_0_0_bbox |     1|
+|2     |design_1_ZmodAWGController_0_1_bbox |     1|
+|3     |design_1_c_counter_binary_0_0_bbox  |     1|
+|4     |design_1_clk_wiz_0_0_bbox           |     1|
+|5     |IBUF                                |     1|
+|6     |OBUF                                |    40|
++------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1479.391 ; gain = 33.547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1479.391 ; gain = 23.145
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1479.391 ; gain = 33.547
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1491.410 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1498.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 1417c235
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:40 . Memory (MB): peak = 1498.047 ; gain = 52.203
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub_projects/Eclypse_Z7_Zmod_AWG/Eclypse_Z7_Zmod_AWG.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 26 18:13:04 2022...

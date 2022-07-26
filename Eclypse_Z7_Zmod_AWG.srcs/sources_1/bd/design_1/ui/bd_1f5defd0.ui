@@ -1,0 +1,66 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.726409",
+   "Default View_TopLeft":"-421,-123",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_sZmodDAC_SetFS1_0 -pg 1 -lvl 6 -x 810 -y 560 -defaultsOSRD
+preplace port port-id_ZmodDAC_ClkIO_0 -pg 1 -lvl 6 -x 810 -y 500 -defaultsOSRD
+preplace port port-id_ZmodDAC_ClkIn_0 -pg 1 -lvl 6 -x 810 -y 520 -defaultsOSRD
+preplace port port-id_sZmodDAC_SDIO_0 -pg 1 -lvl 6 -x 810 -y 460 -defaultsOSRD
+preplace port port-id_sZmodDAC_Reset_0 -pg 1 -lvl 6 -x 810 -y 480 -defaultsOSRD
+preplace port port-id_sZmodDAC_CS_0 -pg 1 -lvl 6 -x 810 -y 420 -defaultsOSRD
+preplace port port-id_sZmodDAC_SCLK_0 -pg 1 -lvl 6 -x 810 -y 440 -defaultsOSRD
+preplace port port-id_sZmodDAC_SetFS2_0 -pg 1 -lvl 6 -x 810 -y 580 -defaultsOSRD
+preplace port port-id_sZmodDAC_EnOut_0 -pg 1 -lvl 6 -x 810 -y 600 -defaultsOSRD
+preplace port port-id_sys_clock -pg 1 -lvl 0 -x -310 -y 490 -defaultsOSRD
+preplace port port-id_ZmodDAC_ClkIO_1 -pg 1 -lvl 6 -x 810 -y 180 -defaultsOSRD
+preplace port port-id_ZmodDAC_ClkIn_1 -pg 1 -lvl 6 -x 810 -y 200 -defaultsOSRD
+preplace port port-id_sZmodDAC_CS_1 -pg 1 -lvl 6 -x 810 -y 100 -defaultsOSRD
+preplace port port-id_sZmodDAC_EnOut_1 -pg 1 -lvl 6 -x 810 -y 280 -defaultsOSRD
+preplace port port-id_sZmodDAC_Reset_1 -pg 1 -lvl 6 -x 810 -y 160 -defaultsOSRD
+preplace port port-id_sZmodDAC_SCLK_1 -pg 1 -lvl 6 -x 810 -y 120 -defaultsOSRD
+preplace port port-id_sZmodDAC_SDIO_1 -pg 1 -lvl 6 -x 810 -y 140 -defaultsOSRD
+preplace port port-id_sZmodDAC_SetFS1_1 -pg 1 -lvl 6 -x 810 -y 240 -defaultsOSRD
+preplace port port-id_sZmodDAC_SetFS2_1 -pg 1 -lvl 6 -x 810 -y 260 -defaultsOSRD
+preplace portBus dZmodDAC_Data_0 -pg 1 -lvl 6 -x 810 -y 540 -defaultsOSRD
+preplace portBus dZmodDAC_Data_1 -pg 1 -lvl 6 -x 810 -y 220 -defaultsOSRD
+preplace inst ZmodAWGController_0 -pg 1 -lvl 5 -x 610 -y 490 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -x 330 -y 590 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x -30 -y 240 -defaultsOSRD
+preplace inst ZmodAWGController_1 -pg 1 -lvl 5 -x 610 -y 170 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -x 150 -y 30 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x -210 -y 20 -defaultsOSRD
+preplace netloc ZmodAWGController_0_sZmodDAC_SetFS1 1 5 1 NJ 560
+preplace netloc ZmodAWGController_0_ZmodDAC_ClkIO 1 5 1 NJ 500
+preplace netloc ZmodAWGController_0_ZmodDAC_ClkIn 1 5 1 NJ 520
+preplace netloc ZmodAWGController_0_dZmodDAC_Data 1 5 1 NJ 540
+preplace netloc Net 1 5 1 NJ 460
+preplace netloc ZmodAWGController_0_sZmodDAC_Reset 1 5 1 NJ 480
+preplace netloc ZmodAWGController_0_sZmodDAC_CS 1 5 1 NJ 420
+preplace netloc ZmodAWGController_0_sZmodDAC_SCLK 1 5 1 NJ 440
+preplace netloc ZmodAWGController_0_sZmodDAC_SetFS2 1 5 1 NJ 580
+preplace netloc ZmodAWGController_0_sZmodDAC_EnOut 1 5 1 NJ 600
+preplace netloc xlconstant_0_dout 1 4 1 410 120n
+preplace netloc clk_wiz_0_clk_100 1 2 3 N 230 N 230 420
+preplace netloc clk_wiz_0_clk_100n 1 2 3 N 250 N 250 430
+preplace netloc sys_clock_1 1 0 2 -290 250 N
+preplace netloc Net1 1 5 1 NJ 140
+preplace netloc ZmodAWGController_0_ZmodDAC_ClkIO1 1 5 1 NJ 180
+preplace netloc ZmodAWGController_0_ZmodDAC_ClkIn1 1 5 1 NJ 200
+preplace netloc ZmodAWGController_0_dZmodDAC_Data1 1 5 1 NJ 220
+preplace netloc ZmodAWGController_0_sZmodDAC_CS1 1 5 1 NJ 100
+preplace netloc ZmodAWGController_0_sZmodDAC_EnOut1 1 5 1 NJ 280
+preplace netloc ZmodAWGController_0_sZmodDAC_Reset1 1 5 1 NJ 160
+preplace netloc ZmodAWGController_0_sZmodDAC_SCLK1 1 5 1 NJ 120
+preplace netloc ZmodAWGController_0_sZmodDAC_SetFS3 1 5 1 NJ 240
+preplace netloc ZmodAWGController_0_sZmodDAC_SetFS4 1 5 1 NJ 260
+preplace netloc xlconstant_1_dout 1 1 2 N 20 60
+levelinfo -pg 1 -310 -210 -30 150 330 610 810
+pagesize -pg 1 -db -bbox -sgen -430 -80 1030 660
+"
+}
+{
+   "da_board_cnt":"1"
+}

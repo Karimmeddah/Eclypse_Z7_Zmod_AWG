@@ -1,0 +1,542 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD47479CBCBEE2709",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../Eclypse_Z7_Zmod_AWG.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ZmodAWGController_0": "",
+      "xlconstant_0": "",
+      "clk_wiz_0": "",
+      "ZmodAWGController_1": "",
+      "xlconcat_0": "",
+      "xlconstant_1": "",
+      "c_counter_binary_0": ""
+    },
+    "ports": {
+      "sZmodDAC_SetFS1_0": {
+        "direction": "O"
+      },
+      "ZmodDAC_ClkIO_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_ZmodAWGController_0_0_ZmodDAC_ClkIO",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "ZmodDAC_ClkIn_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_ZmodAWGController_0_0_ZmodDAC_ClkIn",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "dZmodDAC_Data_0": {
+        "direction": "O",
+        "left": "13",
+        "right": "0"
+      },
+      "sZmodDAC_SDIO_0": {
+        "direction": "IO"
+      },
+      "sZmodDAC_Reset_0": {
+        "type": "rst",
+        "direction": "O",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "sZmodDAC_CS_0": {
+        "direction": "O"
+      },
+      "sZmodDAC_SCLK_0": {
+        "direction": "O"
+      },
+      "sZmodDAC_SetFS2_0": {
+        "direction": "O"
+      },
+      "sZmodDAC_EnOut_0": {
+        "direction": "O"
+      },
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_sys_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0"
+          }
+        }
+      },
+      "ZmodDAC_ClkIO_1": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_ZmodAWGController_0_1_ZmodDAC_ClkIO",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "ZmodDAC_ClkIn_1": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_ZmodAWGController_0_1_ZmodDAC_ClkIn",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "dZmodDAC_Data_1": {
+        "direction": "O",
+        "left": "13",
+        "right": "0"
+      },
+      "sZmodDAC_CS_1": {
+        "direction": "O"
+      },
+      "sZmodDAC_EnOut_1": {
+        "direction": "O"
+      },
+      "sZmodDAC_Reset_1": {
+        "type": "rst",
+        "direction": "O",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "sZmodDAC_SCLK_1": {
+        "direction": "O"
+      },
+      "sZmodDAC_SDIO_1": {
+        "direction": "IO"
+      },
+      "sZmodDAC_SetFS1_1": {
+        "direction": "O"
+      },
+      "sZmodDAC_SetFS2_1": {
+        "direction": "O"
+      },
+      "resetn_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "ZmodAWGController_0": {
+        "vlnv": "digilent.com:user:ZmodAWGController:1.0",
+        "xci_name": "design_1_ZmodAWGController_0_0",
+        "xci_path": "ip\\design_1_ZmodAWGController_0_0\\design_1_ZmodAWGController_0_0.xci",
+        "inst_hier_path": "ZmodAWGController_0",
+        "parameters": {
+          "kCh1ScaleStatic": {
+            "value": "\"1\""
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_xlconstant_0_0",
+        "xci_path": "ip\\design_1_xlconstant_0_0\\design_1_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT2_JITTER": {
+            "value": "124.615"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "96.948"
+          },
+          "CLKOUT2_REQUESTED_PHASE": {
+            "value": "90.000"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "CLK_OUT1_PORT": {
+            "value": "clk_100"
+          },
+          "CLK_OUT2_PORT": {
+            "value": "clk_100n"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "10"
+          },
+          "MMCM_CLKOUT1_PHASE": {
+            "value": "90.000"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "RESET_PORT": {
+            "value": "resetn"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_LOW"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          }
+        }
+      },
+      "ZmodAWGController_1": {
+        "vlnv": "digilent.com:user:ZmodAWGController:1.0",
+        "xci_name": "design_1_ZmodAWGController_0_1",
+        "xci_path": "ip\\design_1_ZmodAWGController_0_1\\design_1_ZmodAWGController_0_1.xci",
+        "inst_hier_path": "ZmodAWGController_1",
+        "parameters": {
+          "kCh1ScaleStatic": {
+            "value": "\"1\""
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "design_1_xlconcat_0_0",
+        "xci_path": "ip\\design_1_xlconcat_0_0\\design_1_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_xlconstant_1_0",
+        "xci_path": "ip\\design_1_xlconstant_1_0\\design_1_xlconstant_1_0.xci",
+        "inst_hier_path": "xlconstant_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "2"
+          }
+        }
+      },
+      "c_counter_binary_0": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "xci_name": "design_1_c_counter_binary_0_0",
+        "xci_path": "ip\\design_1_c_counter_binary_0_0\\design_1_c_counter_binary_0_0.xci",
+        "inst_hier_path": "c_counter_binary_0",
+        "parameters": {
+          "Output_Width": {
+            "value": "14"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "sZmodDAC_SDIO_0",
+          "ZmodAWGController_0/sZmodDAC_SDIO"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "sZmodDAC_SDIO_1",
+          "ZmodAWGController_1/sZmodDAC_SDIO"
+        ]
+      },
+      "ZmodAWGController_0_ZmodDAC_ClkIO": {
+        "ports": [
+          "ZmodAWGController_0/ZmodDAC_ClkIO",
+          "ZmodDAC_ClkIO_0"
+        ]
+      },
+      "ZmodAWGController_0_ZmodDAC_ClkIO1": {
+        "ports": [
+          "ZmodAWGController_1/ZmodDAC_ClkIO",
+          "ZmodDAC_ClkIO_1"
+        ]
+      },
+      "ZmodAWGController_0_ZmodDAC_ClkIn": {
+        "ports": [
+          "ZmodAWGController_0/ZmodDAC_ClkIn",
+          "ZmodDAC_ClkIn_0"
+        ]
+      },
+      "ZmodAWGController_0_ZmodDAC_ClkIn1": {
+        "ports": [
+          "ZmodAWGController_1/ZmodDAC_ClkIn",
+          "ZmodDAC_ClkIn_1"
+        ]
+      },
+      "ZmodAWGController_0_dZmodDAC_Data": {
+        "ports": [
+          "ZmodAWGController_0/dZmodDAC_Data",
+          "dZmodDAC_Data_0"
+        ]
+      },
+      "ZmodAWGController_0_dZmodDAC_Data1": {
+        "ports": [
+          "ZmodAWGController_1/dZmodDAC_Data",
+          "dZmodDAC_Data_1"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_CS": {
+        "ports": [
+          "ZmodAWGController_0/sZmodDAC_CS",
+          "sZmodDAC_CS_0"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_CS1": {
+        "ports": [
+          "ZmodAWGController_1/sZmodDAC_CS",
+          "sZmodDAC_CS_1"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_EnOut": {
+        "ports": [
+          "ZmodAWGController_0/sZmodDAC_EnOut",
+          "sZmodDAC_EnOut_0"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_EnOut1": {
+        "ports": [
+          "ZmodAWGController_1/sZmodDAC_EnOut",
+          "sZmodDAC_EnOut_1"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_Reset": {
+        "ports": [
+          "ZmodAWGController_0/sZmodDAC_Reset",
+          "sZmodDAC_Reset_0"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_Reset1": {
+        "ports": [
+          "ZmodAWGController_1/sZmodDAC_Reset",
+          "sZmodDAC_Reset_1"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_SCLK": {
+        "ports": [
+          "ZmodAWGController_0/sZmodDAC_SCLK",
+          "sZmodDAC_SCLK_0"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_SCLK1": {
+        "ports": [
+          "ZmodAWGController_1/sZmodDAC_SCLK",
+          "sZmodDAC_SCLK_1"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_SetFS1": {
+        "ports": [
+          "ZmodAWGController_0/sZmodDAC_SetFS1",
+          "sZmodDAC_SetFS1_0"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_SetFS2": {
+        "ports": [
+          "ZmodAWGController_0/sZmodDAC_SetFS2",
+          "sZmodDAC_SetFS2_0"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_SetFS3": {
+        "ports": [
+          "ZmodAWGController_1/sZmodDAC_SetFS1",
+          "sZmodDAC_SetFS1_1"
+        ]
+      },
+      "ZmodAWGController_0_sZmodDAC_SetFS4": {
+        "ports": [
+          "ZmodAWGController_1/sZmodDAC_SetFS2",
+          "sZmodDAC_SetFS2_1"
+        ]
+      },
+      "c_counter_binary_0_Q": {
+        "ports": [
+          "c_counter_binary_0/Q",
+          "xlconcat_0/In1",
+          "xlconcat_0/In3"
+        ]
+      },
+      "clk_wiz_0_clk_100": {
+        "ports": [
+          "clk_wiz_0/clk_100",
+          "ZmodAWGController_0/SysClk100",
+          "ZmodAWGController_0/DAC_InIO_Clk",
+          "ZmodAWGController_1/SysClk100",
+          "ZmodAWGController_1/DAC_InIO_Clk",
+          "c_counter_binary_0/CLK"
+        ]
+      },
+      "clk_wiz_0_clk_100n": {
+        "ports": [
+          "clk_wiz_0/clk_100n",
+          "ZmodAWGController_0/DAC_Clk",
+          "ZmodAWGController_1/DAC_Clk"
+        ]
+      },
+      "resetn_0_1": {
+        "ports": [
+          "resetn_0",
+          "clk_wiz_0/resetn",
+          "ZmodAWGController_1/aRst_n",
+          "ZmodAWGController_0/aRst_n"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "ZmodAWGController_1/cDataAxisTdata",
+          "ZmodAWGController_0/cDataAxisTdata"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "ZmodAWGController_0/sDAC_EnIn",
+          "ZmodAWGController_0/sTestMode",
+          "ZmodAWGController_1/sDAC_EnIn",
+          "ZmodAWGController_1/sTestMode",
+          "ZmodAWGController_1/cDataAxisTvalid",
+          "ZmodAWGController_0/cDataAxisTvalid"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "xlconcat_0/In0",
+          "xlconcat_0/In2"
+        ]
+      }
+    }
+  }
+}
